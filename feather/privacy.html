@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — 轻轻 Feather</title>
+<meta name="description" content="轻轻（Feather）隐私政策：不收集任何数据，所有照片分析在设备本地完成；仅在需要时从你自己的 iCloud 下载照片，绝不上传。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="index.html">← 返回首页</a>
+  <h1>隐私政策</h1>
+
+  <div class="meta">
+    适用产品：轻轻（Feather）iOS 应用<br>
+    生效日期：2026-08-27<br>
+    最近更新：2026-08-27<br>
+    开发者（个人信息处理者）：何斌<br>
+    联系邮箱：<a href="mailto:billyhetech@gmail.com">billyhetech@gmail.com</a>
+  </div>
+
+  <div class="callout">
+    <strong>一句话结论：轻轻不收集你的任何数据。</strong>
+    App 没有服务器、没有账号体系，所有照片分析都在你的 iPhone 本地完成。
+    唯一会产生网络流量的情形，是把<strong>你自己存在 iCloud 里的照片下载回本机</strong>以便分析，
+    这一步由 Apple 的系统框架完成，照片不会流向我们或任何第三方。
+  </div>
+
+  <h2>一、我们收集哪些信息</h2>
+  <p><strong>我们不收集任何个人信息，也不收集任何设备信息或使用数据。</strong>具体而言：</p>
+  <ul>
+    <li>不收集、不上传、不存储你的照片、视频或其中的任何内容。</li>
+    <li>不收集姓名、邮箱、手机号、身份证件等身份信息（App 无需注册或登录）。</li>
+    <li>不收集设备标识符（IDFA / IDFV）、位置、通讯录、日历等信息。</li>
+    <li>不使用任何第三方分析、广告、崩溃上报或推送 SDK。</li>
+  </ul>
+
+  <h2>二、照片是怎么被处理的</h2>
+  <p>
+    轻轻需要你授予相册访问权限，才能显示照片、执行删除与归档。这些操作全部通过 Apple 提供的
+    系统框架在设备本地完成：
+  </p>
+  <div class="table-scroll">
+  <table>
+    <tr><th>能力</th><th>使用的系统框架</th><th>数据去向</th></tr>
+    <tr><td>读取与显示照片</td><td>PhotoKit</td><td>仅在设备内存中，不落盘、不外发</td></tr>
+    <tr><td>相似照片分析</td><td>Vision（图像特征向量）</td><td>特征在设备本地计算并在本次扫描结束后释放，不保存、不外发</td></tr>
+    <tr><td>删除照片</td><td>PhotoKit</td><td>移入系统「最近删除」，30 天内可由你恢复</td></tr>
+    <tr><td>归档到相册</td><td>PhotoKit</td><td>仅在你的设备相册内移动/添加</td></tr>
+    <tr><td>收藏 / 取消收藏</td><td>PhotoKit</td><td>只修改这张照片在你相册里的「个人收藏」标记，等同于你在系统「照片」App 里点心形</td></tr>
+    <tr><td>查看照片详情</td><td>PhotoKit</td><td>读取文件名、尺寸、拍摄时间、所属相簿与拍摄位置，仅在本机显示，不外发、不做地名查询</td></tr>
+    <tr><td>按类型 / 相簿挑照片</td><td>PhotoKit（系统智能相册）</td><td>读取系统已经维护好的「截屏」「自拍」等智能相册的成员关系，只用于在 App 内筛出这一批照片，不外发</td></tr>
+  </table>
+  </div>
+  <h3>关于 iCloud 照片与流量</h3>
+  <p>
+    如果你开启了 iCloud「优化 iPhone 存储空间」，部分照片在本机只保留低清占位图。
+    为了让这些照片也能参与相似度分析、能被正常预览，轻轻会通过 Apple 的 PhotoKit
+    <strong>向 iCloud 请求下载缩略图</strong>。关于这件事，有三点需要说清楚：
+  </p>
+  <ul>
+    <li><strong>这是下载，不是上传。</strong>数据方向是「你的 iCloud → 你的 iPhone」，
+        我们没有服务器，照片不会、也无法流向我们或任何第三方。</li>
+    <li><strong>只取降采样缩略图</strong>（相似度分析用 256×256），不下载原图，
+        以尽量减少流量与耗时。</li>
+    <li><strong>过程可见。</strong>扫描界面会实时显示「其中 N 张从 iCloud 下载 · 只下载，不上传」，
+        单张照片加载时也会标明来源，你随时可以知道流量花在哪里。</li>
+  </ul>
+  <p>
+    这一行为使用的是系统相册与 iCloud 之间的既有通道，与你在系统「照片」App 里
+    浏览一张 iCloud 照片时发生的事情完全相同。
+  </p>
+
+  <h3>关于照片详情里的拍摄位置</h3>
+  <p>
+    「照片详情」会显示这张照片自带的拍摄坐标（如果有）。这个坐标<strong>只从你本机的照片
+    读出来、只显示给你看</strong>，不会被上传，也<strong>不会被拿去查询地名</strong>——
+    反向地理编码需要联网请求，我们刻意没有做，宁可只显示一行原始经纬度。
+  </p>
+
+  <h2>三、本地存储了什么</h2>
+  <p>轻轻只在你的设备本地保存以下与照片内容无关的记录，用于展示整理历史与统计：</p>
+  <ul>
+    <li>每次整理的时间、处理张数、删除张数、释放空间估算值、归档张数与目标相册名。</li>
+    <li>被删除照片的系统标识符（`localIdentifier`，一串不含任何图像内容的字符串）。</li>
+    <li>免费功能的使用计数（用于判断是否已用完免费额度）。</li>
+  </ul>
+  <p>这些记录随 App 一同保存在设备上，卸载 App 即被系统删除，我们无法访问。</p>
+
+  <h2>四、内购与支付</h2>
+  <p>
+    轻轻 Pro 是一次性买断（非订阅）。支付、退款与购买凭证校验全部由 Apple 的 App Store 完成，
+    我们不接触也不存储你的支付信息。购买状态通过 Apple 提供的接口在设备本地校验。
+    Apple 对交易信息的处理适用
+    <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple 隐私政策</a>。
+  </p>
+
+  <h2>五、第三方共享</h2>
+  <p>
+    我们不向任何第三方提供、出售或共享你的信息——因为我们根本没有收集任何信息。
+    App 内不含任何第三方 SDK。
+  </p>
+
+  <h2>六、儿童隐私</h2>
+  <p>
+    轻轻不面向 14 周岁以下儿童设计，也不会有意收集任何年龄段用户的个人信息。
+    由于 App 不收集任何数据，不存在针对儿童的额外风险。
+  </p>
+
+  <h2>七、你的权利</h2>
+  <p>依据《中华人民共和国个人信息保护法》及其他适用法律，你享有查阅、复制、更正、删除个人信息等权利。由于本 App 不收集任何个人信息，这些权利在实践中体现为：</p>
+  <ul>
+    <li><strong>撤回授权</strong>：随时在「设置 → 隐私与安全性 → 照片」中撤回或调整相册访问权限。</li>
+    <li><strong>删除本地记录</strong>：卸载 App 即可删除全部本地整理记录。</li>
+    <li><strong>恢复误删照片</strong>：在系统「照片 → 最近删除」中恢复，删除后 30 天内有效。</li>
+  </ul>
+
+  <h2>八、政策变更</h2>
+  <p>
+    若本政策发生变更，我们会更新本页面顶部的「最近更新」日期；涉及重大变更时，会在 App 内显著提示。
+    继续使用 App 即表示你接受更新后的政策。
+  </p>
+
+  <h2>九、联系我们</h2>
+  <p>
+    对本政策有任何疑问，请发邮件至
+    <a href="mailto:billyhetech@gmail.com">billyhetech@gmail.com</a>，我们会在 5 个工作日内回复。
+  </p>
+
+  <hr>
+
+  <h2 id="en">Privacy Policy (English)</h2>
+  <p>
+    <strong>Feather does not collect any data.</strong> The app has no server and no account system.
+    All photo analysis — including similarity detection via Apple's Vision framework — runs locally
+    on your iPhone.
+  </p>
+  <p>
+    The only network activity Feather can cause is <strong>downloading your own photos from your own
+    iCloud Photo Library</strong>. If you use iCloud "Optimize iPhone Storage", some photos exist on
+    your device only as low-resolution placeholders; Feather asks Apple's PhotoKit to fetch a
+    downsampled thumbnail (256×256 for similarity analysis) so those photos can be previewed and
+    compared. The data flows <em>from</em> your iCloud <em>to</em> your device — never to us, and
+    never to any third party. The app shows how many photos were downloaded while it scans.
+  </p>
+  <ul>
+    <li>We never upload, transmit, or store your photos or any content derived from them.</li>
+    <li>We collect no personal information, device identifiers, or usage analytics.</li>
+    <li>The app contains no third-party analytics, advertising, or crash-reporting SDKs.</li>
+    <li>Cleanup history (counts, freed-space estimates, and photo identifiers) is stored only on
+        your device and is removed when you uninstall the app.</li>
+    <li>Purchases are processed entirely by Apple's App Store; we never see your payment details.</li>
+    <li>Deleted photos go to the system "Recently Deleted" album and can be restored within 30 days.</li>
+    <li>Feather can mark a photo as a Favorite and add photos to an album at your request. These
+        changes happen only inside your own photo library via PhotoKit — exactly as if you had made
+        them in Apple's Photos app — and are never reported anywhere.</li>
+    <li>Photo details (file name, dimensions, capture date, containing albums, and capture
+        coordinates) are read on demand and displayed only on your device. We never perform reverse
+        geocoding, which would require a network request.</li>
+  </ul>
+  <p>
+    App Store privacy label: <strong>Data Not Collected</strong>.
+    Questions: <a href="mailto:billyhetech@gmail.com">billyhetech@gmail.com</a>.
+  </p>
+
+  <footer>
+    <p><a href="index.html">首页</a> · <a href="terms.html">使用条款</a> · <a href="support.html">支持</a></p>
+    <p class="muted">© <span id="year">2026</span> 何斌</p>
+  </footer>
+</main>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
