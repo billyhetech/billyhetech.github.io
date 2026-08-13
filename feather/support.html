@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>支持与常见问题 — 轻轻 Feather</title>
-<meta name="description" content="轻轻（Feather）支持页面：常见问题解答、照片恢复方法、恢复购买、联系方式。">
+<title>支持与常见问题 — 轻轻</title>
+<meta name="description" content="轻轻支持页面：常见问题解答、照片恢复方法、恢复购买、联系方式。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 
   <div class="callout">
     <p><strong>需要人工帮助？</strong>发邮件到
-      <a href="mailto:billyhetech@gmail.com?subject=%E8%BD%BB%E8%BD%BB%20Feather%20%E6%94%AF%E6%8C%81">billyhetech@gmail.com</a>，
+      <a href="mailto:billyhetech@gmail.com?subject=%E8%BD%BB%E8%BD%BB%E6%94%AF%E6%8C%81">billyhetech@gmail.com</a>，
       我们会在 <strong>5 个工作日内</strong>回复。</p>
     <p class="muted">为了更快定位问题，请在邮件中附上：iPhone 型号、iOS 版本、App 版本号（在 App 的「关于」页可以看到）、以及问题的复现步骤或截图。</p>
   </div>
@@ -90,6 +90,31 @@
     </p>
   </details>
 
+  <details>
+    <summary>能清理视频吗？</summary>
+    <p>
+      <strong>暂时不能，轻轻目前只处理照片。</strong>
+      「历史」页的整理进度里仍会显示视频的张数，方便你了解相册构成，但它不参与整理。
+    </p>
+    <p>
+      这是一个刻意的取舍，不是遗漏：判断一段视频要不要删，靠的是时长、码率和内容，
+      与判断照片完全是两套标准；而「相似」「更清晰」这类比较方式对视频也不适用。
+      与其做一个半吊子的视频清理，不如先把照片这件事做好。
+    </p>
+  </details>
+
+  <details>
+    <summary>「截屏清理」在哪里？底栏找不到</summary>
+    <p>
+      截屏就在<strong>「整理」页</strong>里：点左上角的来源胶囊 →「按媒体类型」→「截屏」，
+      之后还是同一套滑动去留，不用另外学一套界面。
+    </p>
+    <p>
+      早期版本曾把截屏单独做成一个标签页，后来去掉了——它本来就是整理的一个来源，
+      单开一个入口只是把同一件事在底栏里说了两遍。清理能力一点没少。
+    </p>
+  </details>
+
   <h2>购买相关</h2>
 
   <details>
@@ -150,7 +175,7 @@
   <h2>报告问题</h2>
   <p>
     发现 Bug 或有功能建议，欢迎发邮件到
-    <a href="mailto:billyhetech@gmail.com?subject=%E8%BD%BB%E8%BD%BB%20Feather%20%E5%8F%8D%E9%A6%88">billyhetech@gmail.com</a>。
+    <a href="mailto:billyhetech@gmail.com?subject=%E8%BD%BB%E8%BD%BB%E5%8F%8D%E9%A6%88">billyhetech@gmail.com</a>。
     独立开发者的产品，每一条反馈我都会亲自看。
   </p>
 
@@ -172,6 +197,7 @@
   <footer>
     <p><a href="index.html">首页</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">使用条款</a></p>
     <p class="muted">© <span id="year">2026</span> 何斌</p>
+  <!-- ICP：境内部署时由 scripts/deploy-site-cn.sh 注入备案号，勿删勿改 -->
   </footer>
 </main>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

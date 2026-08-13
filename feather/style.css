@@ -46,13 +46,6 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-h1 .en {
-  color: var(--muted);
-  font-weight: 400;
-  font-size: 1.4rem;
-  margin-left: 6px;
-}
-
 .tagline {
   color: var(--accent);
   font-size: 1.1rem;

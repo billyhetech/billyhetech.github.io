@@ -3,29 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>轻轻 Feather — iOS 照片清理与智能整理</title>
-<meta name="description" content="轻轻（Feather）是一款全程本地处理的 iOS 照片清理工具：滑动去留、相似照片分组对比、整理即归档。不上传任何照片，一次买断无订阅。">
+<title>轻轻 — iOS 照片清理与智能整理</title>
+<meta name="description" content="轻轻是一款全程本地处理的 iOS 照片清理工具：滑动去留、相似照片分组对比、整理即归档。不上传任何照片，一次买断无订阅。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="wrap">
   <header class="hero">
-    <h1>轻轻 <span class="en">Feather</span></h1>
+    <h1>轻轻</h1>
     <p class="tagline">让整理照片这件事「值得做完」</p>
     <p class="lede">
-      滑动去留、相似照片分组对比、整理即归档。<br>
+      滑动去留、整理即归档、相似照片分组对比。<br>
       全程在你的 iPhone 本地完成，<strong>不上传任何照片数据</strong>。<br>
       一次买断，无广告、无订阅。
     </p>
+    <!--
+      英文入口放在这里而不是把英文段落搬到顶部：这一页是 lang="zh-CN"，
+      主要读者是中文用户与中国区审核员，把英文顶在最上面等于让多数人先划过一屏。
+      其余三页的英文段落也都在页尾、锚点同样是 #en，保持一致。
+    -->
+    <p class="muted"><a href="#en">Read in English ↓</a></p>
   </header>
 
   <section>
     <h2>核心功能</h2>
     <ul class="features">
-      <li><strong>可信删除</strong>：删除时实时显示已释放空间，照片进入系统「最近删除」，30 天内可恢复。</li>
-      <li><strong>相似照片分组对比</strong>：连拍与重复照片自动聚成一组，一次挑出最好的那张。</li>
+      <li><strong>按来源挑照片回顾</strong>：盲盒随机、去年今日、按月、按类型（截屏 / 实况 / 自拍 / 人像等）、按相簿。</li>
       <li><strong>整理即归档</strong>：边整理边把保留的照片归入相册，不用再回照片库二次操作。</li>
-      <li><strong>按来源挑照片</strong>：盲盒随机、去年今日、按月、按类型（截屏 / 实况 / 自拍 / 人像等）、按相簿。</li>
+      <li><strong>相似照片分组对比</strong>：连拍与重复照片自动聚成一组，一次挑出最好的那张。</li>
+      <li><strong>可信删除</strong>：删除时实时显示已释放空间，照片进入系统「最近删除」，30 天内可恢复。</li>
     </ul>
   </section>
 
@@ -46,9 +52,47 @@
     <a href="support.html">支持与常见问题</a>
   </nav>
 
+  <hr>
+
+  <!--
+    🔴 这一段里只出现「Feather」，绝不出现「轻轻」——与上方中文段落只出现「轻轻」
+    是同一条规则的两面（见 CLAUDE.md「App 名是双语的」）。
+    内容与中文段落**对齐但不逐句翻译**：英文读者要的是「这是什么、我的照片安不安全、
+    要不要订阅」三件事，其余留给三个法务页各自的英文段落。
+  -->
+  <section>
+    <h2 id="en">Feather (English)</h2>
+    <p class="lede">
+      Feather is an on-device photo cleaner for iPhone. Swipe to keep or delete,
+      compare near-duplicate bursts side by side, and file the keepers into an album as you go.
+    </p>
+    <ul class="features">
+      <li><strong>Everything stays on your iPhone.</strong> No server, no account, no analytics
+          or ad SDKs. All analysis — including similarity matching — runs through Apple's
+          on-device frameworks. App Store privacy label: <strong>Data Not Collected</strong>.</li>
+      <li><strong>The one kind of network traffic, explained.</strong> If you use iCloud
+          "Optimize iPhone Storage", Feather asks Apple's PhotoKit to fetch thumbnails of
+          <em>your own</em> photos back from <em>your own</em> iCloud so they can be analyzed.
+          The direction is iCloud → your device. Nothing is ever uploaded to us; we have no
+          server to upload it to.</li>
+      <li><strong>Deletions are reversible.</strong> Photos move to the system
+          "Recently Deleted" album and can be restored within 30 days. Freed space is shown
+          as you go.</li>
+      <li><strong>One-time purchase.</strong> Not a subscription — no recurring charges, no ads.</li>
+    </ul>
+    <p class="muted">
+      Requires iOS 18 or later. Full details:
+      <a href="privacy.html#en">Privacy Policy</a> ·
+      <a href="terms.html#en">Terms of Use</a> ·
+      <a href="support.html#en">Support</a>.
+      Questions: <a href="mailto:billyhetech@gmail.com">billyhetech@gmail.com</a>.
+    </p>
+  </section>
+
   <footer>
     <p>联系：<a href="mailto:billyhetech@gmail.com">billyhetech@gmail.com</a></p>
     <p class="muted">© <span id="year">2026</span> 何斌. 保留所有权利。</p>
+  <!-- ICP：境内部署时由 scripts/deploy-site-cn.sh 注入备案号，勿删勿改 -->
   </footer>
 </main>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
