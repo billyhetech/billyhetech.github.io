@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="支持与常见问题 — 轻轻"
+      data-title-en="Support &amp; FAQ — Feather"
+      data-desc-zh="轻轻支持页面：常见问题解答、照片恢复方法、恢复购买、联系方式。"
+      data-desc-en="Feather support: frequently asked questions, recovering deleted photos, restoring purchases, and how to reach us.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>支持与常见问题 — 轻轻</title>
+<meta name="description" content="轻轻支持页面：常见问题解答、照片恢复方法、恢复购买、联系方式。">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="brandmark.png" type="image/png">
+<link rel="apple-touch-icon" href="brandmark.png">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'feather-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="brandmark.png" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">轻轻</span><span lang="en">Feather</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms</span></a>
+      <a href="support.html" aria-current="page"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container prose">
+
+    <div class="pagehead">
+      <a class="back" href="index.html">
+        <span aria-hidden="true">←</span>
+        <span lang="zh">返回首页</span><span lang="en">Back to home</span>
+      </a>
+      <h1><span lang="zh">支持与常见问题</span><span lang="en">Support &amp; FAQ</span></h1>
+      <p class="lede"><span lang="zh">照片找回、存储空间、恢复购买——最常被问到的问题都在下面。</span><span lang="en">Recovering photos, storage that didn’t change, restoring a purchase — the questions we get most.</span></p>
+    </div>
+
+    <div class="doc">
+      <div class="callout">
+      <p><span lang="zh"><strong>需要人工帮助？</strong>发邮件到 <a href="mailto:graceglabs@163.com?subject=%E8%BD%BB%E8%BD%BB%E6%94%AF%E6%8C%81">graceglabs@163.com</a>，我们会在 <strong>5 个工作日内</strong>回复。</span><span lang="en"><strong>Need a human?</strong> Email <a href="mailto:graceglabs@163.com?subject=Feather%20support">graceglabs@163.com</a> — we reply within <strong>five business days</strong>.</span></p>
+      <p class="muted small"><span lang="zh">为了更快定位问题，请在邮件中附上：iPhone 型号、iOS 版本、App 版本号（在 App 的「关于」页可以看到），以及问题的复现步骤或截图。</span><span lang="en">To help us locate the problem quickly, please include your iPhone model, iOS version, the app version (shown on the About screen), and the steps or a screenshot that reproduce it.</span></p>
+      </div>
+      <section class="faq-group">
+      <h2><span lang="zh">最常见的两个问题</span><span lang="en">The two most common questions</span></h2>
+      <details open>
+        <summary><span lang="zh">我误删了照片，还能找回来吗？</span><span lang="en">I deleted a photo by mistake — can I get it back?</span></summary>
+      <p><span lang="zh"><strong>能。</strong>轻轻从不永久删除照片，只是把它们移入系统的「最近删除」相册。</span><span lang="en"><strong>Yes.</strong> Feather never permanently deletes anything — it only moves photos into the system’s Recently Deleted album.</span></p>
+      <p><span lang="zh">恢复方法：打开系统「照片」App → 底部「相簿」→ 拉到最下方「最近删除」→ 选中照片 →「恢复」。</span><span lang="en">To restore: open Apple’s Photos app → Albums → scroll to the bottom → Recently Deleted → select the photos → Recover.</span></p>
+      <p><span lang="zh">照片在「最近删除」中保留 <strong>30 天</strong>，超过 30 天由 iOS 自动清除，届时无法再恢复。</span><span lang="en">Photos stay there for <strong>30 days</strong>. After that iOS purges them automatically and they can no longer be recovered.</span></p>
+      </details>
+      <details open>
+        <summary><span lang="zh">删了很多照片，为什么存储空间没有立刻变多？</span><span lang="en">I deleted a lot of photos — why didn’t my storage go up?</span></summary>
+      <p><span lang="zh">这是 iOS 的正常行为，不是 App 出了问题。被删除的照片会在「最近删除」中保留 30 天以便你反悔，在系统真正清除之前，它们仍然占用空间。</span><span lang="en">This is normal iOS behaviour, not a bug in the app. Deleted photos stay in Recently Deleted for 30 days so you can change your mind, and until the system actually purges them they still occupy space.</span></p>
+      <p><span lang="zh">想立刻释放：打开「照片 → 相簿 → 最近删除」→ 右上角「选择」→「全部删除」。这一步是不可逆的，请先确认里面没有你还想要的照片。</span><span lang="en">To free it immediately: Photos → Albums → Recently Deleted → Select → Delete All. That step is irreversible, so check first that nothing in there is still wanted.</span></p>
+      <p><span lang="zh">另外，App 里显示的「已释放 XX MB」是估算值，用于给你即时反馈，可能与系统统计略有出入。</span><span lang="en">Also note that the "XX MB freed" figure in the app is an estimate meant as immediate feedback, and may differ slightly from the system’s own accounting.</span></p>
+      </details>
+      </section>
+      <section class="faq-group">
+      <h2><span lang="zh">功能相关</span><span lang="en">Features</span></h2>
+      <details>
+        <summary><span lang="zh">相似照片没有把我觉得像的照片分到一组</span><span lang="en">Similar photos I expected to be grouped together weren’t</span></summary>
+      <p><span lang="zh">先在「相似」页左上角切换<strong>灵敏度</strong>后重新扫描：</span><span lang="en">First change the <strong>sensitivity</strong> from the control at the top left of the Similar tab, then rescan:</span></p>
+      <ul>
+        <li><span lang="zh"><strong>严格</strong>——只找几乎完全一样的照片</span><span lang="en"><strong>Strict</strong> — only near-identical photos</span></li>
+        <li><span lang="zh"><strong>标准</strong>——连拍与同场景多拍（默认）</span><span lang="en"><strong>Standard</strong> — bursts and repeats of the same scene (default)</span></li>
+        <li><span lang="zh"><strong>宽松</strong>——同场景不同角度也算一组</span><span lang="en"><strong>Relaxed</strong> — the same scene from different angles counts too</span></li>
+      </ul>
+      <p><span lang="zh">另外请注意，轻轻只在<strong>同一天内</strong>做分组（连拍必然发生在同一天），跨日期的重复照片不会被聚到一起。</span><span lang="en">Also note that Feather groups only <strong>within a single day</strong> — a burst is always taken on one day — so duplicates spread across different dates are not clustered.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">照片存在 iCloud 里，能参与分析吗？会不会偷偷上传？</span><span lang="en">My photos live in iCloud — can they be analysed, and are they being uploaded?</span></summary>
+      <p><span lang="zh"><strong>能参与，而且不会上传。</strong>如果你开启了 iCloud「优化 iPhone 储存空间」，部分照片在本机只有低清占位图。轻轻会通过 Apple 的系统框架，把这些照片的<strong>缩略图从你自己的 iCloud 下载回本机</strong>再做分析。</span><span lang="en"><strong>Yes they can, and no they are not.</strong> If you use iCloud "Optimize iPhone Storage", some photos exist locally only as low-resolution placeholders. Feather asks Apple’s frameworks to <strong>fetch thumbnails of those photos back from your own iCloud</strong> before analysing them.</span></p>
+      <p><span lang="zh">方向是「你的 iCloud → 你的 iPhone」。我们没有服务器，照片不会、也无法流向我们或任何第三方。分析只需要 256×256 的缩略图，不下载原图，流量开销很小。扫描时界面会实时显示「其中 N 张从 iCloud 下载 · 只下载，不上传」，你随时能看到流量花在哪里。</span><span lang="en">The direction is your iCloud → your iPhone. We have no server, so photos cannot reach us or any third party. Analysis needs only a 256×256 thumbnail, never the original, so the data cost is small. While scanning, the screen shows a live count labelled "download only, never upload", so you can always see where the traffic went.</span></p>
+      <p><span lang="zh">若扫描提示「没有可分析的照片」，通常是网络不通导致缩略图取不回来——检查网络后重试即可。也可以在「设置 → 照片」中改选「下载并保留原始照片」，让照片常驻本机。</span><span lang="en">If a scan reports that there is nothing to analyse, the usual cause is that thumbnails could not be fetched over the network — check your connection and retry. You can also switch to "Download and Keep Originals" in Settings → Photos to keep photos on device.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">「整理即归档」怎么用？</span><span lang="en">How does filing-while-you-review work?</span></summary>
+      <p><span lang="zh">在整理会话里<strong>向下轻滑</strong>当前这张照片，底部的归档坞会升起；不松手横向移动就能换一个目标相簿，松手即落地。不横移就落在粘性默认相簿上，零点击零瞄准。</span><span lang="en">In a cleanup session, <strong>swipe the current photo downwards</strong> and the archive dock rises from the bottom. Slide sideways without lifting your finger to aim at a different album, then release to file it. If you do not slide, it lands in the sticky default album — no taps, no aiming.</span></p>
+      <p><span lang="zh">也可以直接轻点坞里的相簿格子，或用底部工具岛的归档键。一个相簿都没有时，会先请你新建一个。</span><span lang="en">You can also tap an album tile in the dock directly, or use the archive key on the bottom toolbar. If you have no albums yet, it will offer to create one first.</span></p>
+      <p><span lang="zh">归档是非破坏性的：照片仍然留在「最近项目」里，只是额外加入了一个相簿。</span><span lang="en">Filing is non-destructive: the photo stays in Recents and is simply added to an album as well.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">为什么找不到某些照片？</span><span lang="en">Why can’t the app see some of my photos?</span></summary>
+      <p><span lang="zh">如果你在授权时选择了「选中的照片」，轻轻只能看到你勾选的那部分。前往「设置 → 隐私与安全性 → 照片 → 轻轻」，改为「完全访问」即可看到全部照片。</span><span lang="en">If you granted access to "Selected Photos" only, Feather can see just the ones you ticked. Go to Settings → Privacy &amp; Security → Photos → Feather and switch to "Full Access" to see the whole library.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">能清理视频吗？</span><span lang="en">Can it clean up videos?</span></summary>
+      <p><span lang="zh"><strong>暂时不能，轻轻目前只处理照片。</strong>「历史」页的整理进度里仍会显示视频的张数，方便你了解相册构成，但它不参与整理。</span><span lang="en"><strong>Not yet — Feather handles photos only.</strong> The progress view in the History tab still shows how many videos you have, so you can see the shape of your library, but they are not part of a cleanup session.</span></p>
+      <p><span lang="zh">这是一个刻意的取舍，不是遗漏：判断一段视频要不要删，靠的是时长、码率和内容，与判断照片完全是两套标准；而「相似」「更清晰」这类比较方式对视频也不适用。与其做一个半吊子的视频清理，不如先把照片这件事做好。</span><span lang="en">That is a deliberate trade-off rather than an oversight. Deciding whether to delete a video depends on its length, bitrate, and content — a completely different standard from photos — and comparisons like "more similar" or "sharper" do not transfer. We would rather do photos properly than ship half a video cleaner.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">「截屏清理」在哪里？底栏找不到</span><span lang="en">Where is screenshot cleanup? I can’t find it in the tab bar</span></summary>
+      <p><span lang="zh">截屏就在<strong>「整理」页</strong>里：点左上角的来源胶囊 →「按媒体类型」→「截屏」，之后还是同一套滑动去留，不用另外学一套界面。</span><span lang="en">Screenshots live inside the <strong>Organize tab</strong>: tap the source chip at the top left → By media type → Screenshots. From there it is the same swipe-to-decide flow — there is no second interface to learn.</span></p>
+      <p><span lang="zh">早期版本曾把截屏单独做成一个标签页，后来去掉了——它本来就是整理的一个来源，单开一个入口只是把同一件事在底栏里说了两遍。清理能力一点没少。</span><span lang="en">An early version gave screenshots their own tab, and we removed it: screenshots were already one of the cleanup sources, so a separate tab just said the same thing twice in the tab bar. No capability was lost.</span></p>
+      </details>
+      </section>
+      <section class="faq-group">
+      <h2><span lang="zh">购买相关</span><span lang="en">Purchases</span></h2>
+      <details>
+        <summary><span lang="zh">Pro 是订阅吗？会不会自动扣费？</span><span lang="en">Is Pro a subscription? Will I be charged again?</span></summary>
+      <p><span lang="zh"><strong>不是订阅，一次买断，永不自动续费。</strong>购买一次即永久解锁，这是我们和同类产品最明确的区别。</span><span lang="en"><strong>It is not a subscription. It is a one-time purchase that never auto-renews.</strong> Buy once, unlocked forever — the clearest difference between this app and most others in the category.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">换了新手机 / 重装了 App，Pro 没了</span><span lang="en">I got a new phone or reinstalled the app, and Pro is gone</span></summary>
+      <p><span lang="zh">打开 App →「历史」页右上角「解锁 Pro」→ 点击底部的<strong>「恢复购买」</strong>。只要用的是当初购买时的同一个 Apple ID，就会立即恢复，不会重复扣费。</span><span lang="en">Open the app → History tab → "Unlock Pro" at the top right → tap <strong>Restore Purchases</strong> at the bottom. As long as you are signed in with the Apple ID you originally bought it with, it restores immediately and you are not charged again.</span></p>
+      <p><span lang="zh">如果恢复失败，请确认「设置 → 你的名字 → 媒体与购买项目」中登录的是购买时使用的 Apple ID。</span><span lang="en">If restoring fails, check Settings → your name → Media &amp; Purchases to confirm which Apple ID is signed in.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">免费版能用到什么程度？</span><span lang="en">How far does the free version go?</span></summary>
+      <p><span lang="zh">滑动整理<strong>完全免费、不限次数、没有广告</strong>（截屏、按月、按相簿等全部来源都包含在内）。相似照片分组与整理即归档每天都可免费体验 5 组；当天用完后会提示解锁 Pro，第二天按本地自然日重置。</span><span lang="en">Swipe-based cleanup is <strong>completely free, unlimited, and ad-free</strong>, across every source — screenshots, by month, by album, and the rest. Similar-photo grouping and filing-while-you-review give you 5 free groups a day; once those are used up the app offers Pro, and the allowance resets on the next local calendar day.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">怎么申请退款？</span><span lang="en">How do I request a refund?</span></summary>
+      <p><span lang="zh">购买由 Apple 处理，退款也需要向 Apple 申请：访问 <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>，登录后找到对应订单并提交退款请求。</span><span lang="en">Purchases are handled by Apple, so refunds go through Apple too: visit <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>, sign in, find the order, and submit a refund request.</span></p>
+      </details>
+      </section>
+      <section class="faq-group">
+      <h2><span lang="zh">隐私相关</span><span lang="en">Privacy</span></h2>
+      <details>
+        <summary><span lang="zh">我的照片会被上传吗？</span><span lang="en">Are my photos uploaded anywhere?</span></summary>
+      <p><span lang="zh"><strong>不会。</strong>轻轻没有服务器，也不包含任何分析或广告 SDK，照片没有任何可以流向我们的通道。相似照片的分析使用 iOS 系统的 Vision 框架在你的设备上完成。</span><span lang="en"><strong>No.</strong> Feather has no server and contains no analytics or advertising SDKs, so there is no channel through which a photo could reach us. Similarity analysis runs on your device through Apple’s Vision framework.</span></p>
+      <p><span lang="zh">App 确实会产生一点网络流量，但那是<strong>下载</strong>——把你自己存在 iCloud 里的照片取回本机以便分析（开启「优化 iPhone 储存空间」时必需）。数据方向是「你的 iCloud → 你的设备」，扫描时界面会实时显示下载了多少张并注明「只下载，不上传」。详见<a href="privacy.html">隐私政策</a>。</span><span lang="en">The app does generate some network traffic, but it is a <strong>download</strong>: fetching your own iCloud photos back to your device so they can be analysed, which is necessary when "Optimize iPhone Storage" is on. The direction is your iCloud → your device, and the scan screen shows the live count labelled "download only, never upload". Full detail is in the <a href="privacy.html">Privacy Policy</a>.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">App 为什么要相册的「写入」权限？</span><span lang="en">Why does the app need write access to my photo library?</span></summary>
+      <p><span lang="zh">删除照片和「整理即归档」（把照片加入相册）都需要写入权限。所有写操作都只发生在你的设备本地相册内。</span><span lang="en">Deleting photos and filing them into an album both require write access. Every write happens inside your own photo library on your own device.</span></p>
+      </details>
+      </section>
+      <h2><span lang="zh">报告问题</span><span lang="en">Report a problem</span></h2>
+      <p><span lang="zh">发现 Bug 或有功能建议，欢迎发邮件到 <a href="mailto:graceglabs@163.com?subject=%E8%BD%BB%E8%BD%BB%E5%8F%8D%E9%A6%88">graceglabs@163.com</a>。独立开发者的产品，每一条反馈我都会亲自看。</span><span lang="en">Found a bug, or have a feature request? Email <a href="mailto:graceglabs@163.com?subject=Feather%20feedback">graceglabs@163.com</a>. This is an independent app — every message is read personally.</span></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="brandmark.png" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">轻轻</span><span lang="en">Feather</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

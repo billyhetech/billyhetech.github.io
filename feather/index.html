@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="轻轻 — iOS 照片清理与智能整理"
+      data-title-en="Feather — On-device photo cleanup for iPhone"
+      data-desc-zh="轻轻是一款全程本地处理的 iOS 照片清理工具：滑动去留、相似照片分组对比、整理即归档。不上传任何照片，一次买断无订阅。"
+      data-desc-en="Feather is an on-device photo cleaner for iPhone: swipe to keep or delete, compare near-duplicate bursts, and file keepers into albums. Nothing is uploaded. One-time purchase.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>轻轻 — iOS 照片清理与智能整理</title>
+<meta name="description" content="轻轻是一款全程本地处理的 iOS 照片清理工具：滑动去留、相似照片分组对比、整理即归档。不上传任何照片，一次买断无订阅。">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="brandmark.png" type="image/png">
+<link rel="apple-touch-icon" href="brandmark.png">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'feather-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="brandmark.png" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">轻轻</span><span lang="en">Feather</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="#features"><span lang="zh">功能</span><span lang="en">Features</span></a>
+      <a href="#privacy"><span lang="zh">隐私</span><span lang="en">Privacy</span></a>
+      <a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">
+          <span lang="zh">iOS 18 或更新版本 · 一次买断，无订阅</span>
+          <span lang="en">Requires iOS 18 or later · One-time purchase</span>
+        </p>
+
+        <h1>
+          <span lang="zh">让整理照片这件事<br>「值得做完」</span>
+          <span lang="en">Photo cleanup you'll<br>actually finish</span>
+        </h1>
+
+        <p class="lede">
+          <span lang="zh">滑动去留、整理即归档、相似照片分组对比。
+            全程在你的 iPhone 本地完成，<strong>不上传任何照片数据</strong>。</span>
+          <span lang="en">Swipe to keep or delete, file the keepers into an album as you go,
+            and compare near-duplicate bursts side by side.
+            It all runs on your iPhone — <strong>no photo ever leaves it</strong>.</span>
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn--primary" href="#privacy">
+            <span lang="zh">隐私承诺</span><span lang="en">Our privacy promise</span>
+          </a>
+          <a class="btn btn--ghost" href="support.html">
+            <span lang="zh">常见问题</span><span lang="en">FAQ &amp; support</span>
+          </a>
+        </div>
+
+        <ul class="trust">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.3 2.9 8.3 7 9.5 4.1-1.2 7-5.2 7-9.5V6l-7-3Z"/><path d="m9.2 12.2 2 2 3.6-4"/></svg>
+            <span lang="zh">不上传任何照片</span><span lang="en">Nothing is uploaded</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16v10H4z"/><path d="M4 11h16"/><path d="M8 15h3"/></svg>
+            <span lang="zh">无订阅、无广告</span><span lang="en">No subscription, no ads</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3.5 4.5V9H8"/><path d="M12 8v4.4l3 1.8"/></svg>
+            <span lang="zh">删除后 30 天内可恢复</span><span lang="en">Deletions recoverable for 30 days</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <div class="device" aria-hidden="true">
+          <div class="device__screen">
+            <div class="stack">
+              <span class="stack__card stack__card--3">
+                <img src="photo-3.jpg" alt="" width="600" height="800" decoding="async">
+              </span>
+              <span class="stack__card stack__card--2">
+                <img src="photo-2.jpg" alt="" width="600" height="800" decoding="async">
+              </span>
+              <span class="stack__card stack__card--1">
+                <img src="photo-1.jpg" alt="" width="600" height="800" decoding="async">
+              </span>
+            </div>
+            <span class="verdict verdict--del">✕</span>
+            <span class="verdict verdict--keep">✓</span>
+            <div class="island"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--tint" id="features">
+    <div class="container">
+      <span class="section-kicker" lang="zh">核心功能</span>
+      <span class="section-kicker" lang="en">What it does</span>
+
+      <h2>
+        <span lang="zh">每次只面对一小组照片，不是一万张</span>
+        <span lang="en">One small group at a time — not ten thousand photos</span>
+      </h2>
+
+      <p class="lede">
+        <span lang="zh">整理照片之所以做不完，是因为它没有终点。
+          轻轻把整个相册切成一小组一小组，每一组都能在几分钟内真正结束。</span>
+        <span lang="en">Cleaning up a photo library usually fails because it has no finish line.
+          Feather cuts the library into small batches, and each one can genuinely be finished
+          in a couple of minutes.</span>
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h5l1.6 2H20v9H4z"/><path d="M16 3.5 18 5l-2 1.5"/><path d="M12.5 5H18"/></svg>
+          </div>
+          <h3><span lang="zh">按来源挑照片回顾</span><span lang="en">Pick a source, then review</span></h3>
+          <p>
+            <span lang="zh">盲盒随机、去年今日、按月、按媒体类型（截屏 / 实况 / 自拍 / 人像等）、按相簿。
+              先决定「看哪一批」，再开始滑。</span>
+            <span lang="en">Shuffle, On This Day, by month, by media type (screenshots, Live Photos,
+              selfies, portraits), or by album. Decide which batch you're facing before you start.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5h5.6L10.4 9H21v9.5H3z"/><path d="M12 11.5v5"/><path d="m9.6 14.2 2.4 2.4 2.4-2.4"/></svg>
+          </div>
+          <h3><span lang="zh">整理即归档</span><span lang="en">File keepers as you go</span></h3>
+          <p>
+            <span lang="zh">向下轻滑就把这一张归入相簿，中途横移还能改目标。
+              不用整理完再回照片库做第二遍。</span>
+            <span lang="en">A downward swipe files the photo into an album; slide sideways
+              mid-gesture to aim at a different one. No second pass in the Photos app.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 3.5h12v12h-12z"/><path d="M15.5 20.5h-12v-12"/></svg>
+          </div>
+          <h3><span lang="zh">相似照片分组对比</span><span lang="en">Side-by-side for near-duplicates</span></h3>
+          <p>
+            <span lang="zh">连拍与重复照片自动聚成一组，并且进组时已经替你选好推荐保留的那张——
+              你只需要否决，不需要从头挑。</span>
+            <span lang="en">Bursts and repeats are clustered automatically, and the group opens
+              with a recommended keeper already chosen. You only pay the cost of overriding it.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M9.5 7V4.8h5V7"/><path d="M6.2 7l.9 12.2h9.8L17.8 7"/><path d="M12 10.8v4.4l2.6 1.5"/></svg>
+          </div>
+          <h3><span lang="zh">可信删除</span><span lang="en">Deletions you can trust</span></h3>
+          <p>
+            <span lang="zh">删除时实时显示已释放空间。照片进入系统「最近删除」，
+              30 天内随时可以完整恢复。</span>
+            <span lang="en">Freed space is shown as you go. Photos move to the system
+              "Recently Deleted" album and can be restored in full within 30 days.</span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="privacy">
+    <div class="container">
+      <div class="panel">
+        <div>
+          <span class="section-kicker" lang="zh">隐私承诺</span>
+          <span class="section-kicker" lang="en">Privacy</span>
+
+          <h2>
+            <span lang="zh">没有服务器，就没有「上传」这回事</span>
+            <span lang="en">No server means there is nothing to upload to</span>
+          </h2>
+
+          <p class="muted">
+            <span lang="zh">轻轻没有服务器，没有账号体系，没有任何分析或广告 SDK。
+              所有照片分析——包括相似度比对——都使用 iOS 的系统框架在你的设备本地完成。</span>
+            <span lang="en">Feather has no server, no account system, and no analytics or
+              advertising SDKs. All photo analysis — including similarity matching — runs
+              through Apple's on-device frameworks, on your iPhone.</span>
+          </p>
+
+          <p class="muted">
+            <span lang="zh">唯一会产生网络流量的情形，是把<strong>你自己存在 iCloud 里的照片下载回本机</strong>以便分析。
+              方向是「你的 iCloud → 你的设备」，由 Apple 的系统框架完成，
+              照片不会、也无法流向我们或任何第三方。扫描时界面会实时显示下载了多少张，
+              并标明「只下载，不上传」。</span>
+            <span lang="en">The only network activity it can cause is
+              <strong>downloading your own photos from your own iCloud library</strong> so they
+              can be analysed. The direction is iCloud → your device, handled by Apple's
+              frameworks. Nothing flows to us or to any third party — we have no server to
+              receive it. The scan screen shows how many photos were fetched, labelled
+              "download only, never upload".</span>
+          </p>
+
+          <p>
+            <span class="badge-label" lang="zh">App Store 隐私标签：不收集数据</span>
+            <span class="badge-label" lang="en">App Store privacy label: Data Not Collected</span>
+          </p>
+        </div>
+
+        <ul class="factlist">
+          <li>
+            <b><span lang="zh">数据收集</span><span lang="en">Data collected</span></b>
+            <span><span lang="zh">无。不收集照片、身份、位置或设备标识符</span><span lang="en">None — no photos, identity, location, or device identifiers</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">账号体系</span><span lang="en">Accounts</span></b>
+            <span><span lang="zh">无。不需要注册，也不需要登录</span><span lang="en">None — no sign-up, no sign-in</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">第三方 SDK</span><span lang="en">Third-party SDKs</span></b>
+            <span><span lang="zh">无分析、无广告、无崩溃上报</span><span lang="en">No analytics, no ads, no crash reporting</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">照片分析</span><span lang="en">Analysis</span></b>
+            <span><span lang="zh">由 iOS 的 Vision 框架在设备本地完成</span><span lang="en">Runs locally via Apple's Vision framework</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">网络行为</span><span lang="en">Network</span></b>
+            <span><span lang="zh">仅从你自己的 iCloud 取回你自己的照片</span><span lang="en">Only fetching your own photos from your own iCloud</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--tight" id="docs">
+    <div class="container">
+      <h2>
+        <span lang="zh">条款与支持</span>
+        <span lang="en">Legal &amp; support</span>
+      </h2>
+
+      <ul class="doclinks">
+        <li>
+          <a href="privacy.html">
+            <strong><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></strong>
+            <span><span lang="zh">收集了什么、照片怎么被处理、本地存了什么，以及你的权利。</span><span lang="en">What is collected, how photos are handled, what stays on your device, and your rights.</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="terms.html">
+            <strong><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></strong>
+            <span><span lang="zh">一次性买断说明、删除操作免责、退款途径与责任限制。</span><span lang="en">One-time purchase terms, deletion disclaimers, refunds, and limits of liability.</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="support.html">
+            <strong><span lang="zh">支持与常见问题</span><span lang="en">Support &amp; FAQ</span></strong>
+            <span><span lang="zh">误删怎么找回、空间为什么没变多、Pro 怎么恢复购买。</span><span lang="en">Recovering deleted photos, why storage didn't change, and restoring your purchase.</span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="brandmark.png" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">轻轻</span><span lang="en">Feather</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="使用条款 — 轻轻"
+      data-title-en="Terms of Use — Feather"
+      data-desc-zh="轻轻使用条款：一次性买断说明、删除操作免责、退款途径与责任限制。"
+      data-desc-en="Feather terms of use: one-time purchase terms, deletion disclaimers, refunds, and limits of liability.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>使用条款 — 轻轻</title>
+<meta name="description" content="轻轻使用条款：一次性买断说明、删除操作免责、退款途径与责任限制。">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="brandmark.png" type="image/png">
+<link rel="apple-touch-icon" href="brandmark.png">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'feather-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="brandmark.png" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">轻轻</span><span lang="en">Feather</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <a href="terms.html" aria-current="page"><span lang="zh">使用条款</span><span lang="en">Terms</span></a>
+      <a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container prose">
+
+    <div class="pagehead">
+      <a class="back" href="index.html">
+        <span aria-hidden="true">←</span>
+        <span lang="zh">返回首页</span><span lang="en">Back to home</span>
+      </a>
+      <h1><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></h1>
+      <p class="lede"><span lang="zh">一次买断、删除可恢复、责任边界在哪里——下面是完整条款。</span><span lang="en">A one-time purchase, reversible deletions, and where liability ends — the full terms follow.</span></p>
+    </div>
+
+    <div class="doc">
+      <dl class="meta">
+        <div>
+          <dt><span lang="zh">适用产品</span><span lang="en">Product</span></dt>
+          <dd><span lang="zh">轻轻 iOS 应用</span><span lang="en">Feather for iOS</span></dd>
+        </div>
+        <div>
+          <dt><span lang="zh">生效日期</span><span lang="en">Effective</span></dt>
+          <dd>2026-08-16</dd>
+        </div>
+        <div>
+          <dt><span lang="zh">开发者</span><span lang="en">Developer</span></dt>
+          <dd>
+            <span lang="zh">高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）</span>
+            <span lang="en">Gao Yuan, sole proprietor of Beijing Beibeizhixing Yunying Fuzhuang Zhuanyingdian (an individually-owned business registered in China)</span>
+          </dd>
+        </div>
+        <div>
+          <dt><span lang="zh">联系邮箱</span><span lang="en">Contact</span></dt>
+          <dd><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></dd>
+        </div>
+      </dl>
+      <div class="callout">
+      <p><span lang="zh">本条款与 Apple 的<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">标准最终用户许可协议（EULA）</a>同时适用。两者冲突之处，以对你更有利的条款为准。</span><span lang="en">These terms apply alongside Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standard End User License Agreement (EULA)</a>. Where the two conflict, whichever term is more favourable to you prevails.</span></p>
+      </div>
+      <h2><span lang="zh">一、许可范围</span><span lang="en">1. Scope of the licence</span></h2>
+      <p><span lang="zh">我们授予你一项个人的、不可转让的、非独占的许可，允许你在你拥有或控制的 Apple 设备上，按 App Store 使用规则安装并使用轻轻。你不得对本 App 进行反向工程、反编译、出租、出售或再许可。</span><span lang="en">We grant you a personal, non-transferable, non-exclusive licence to install and use Feather on Apple devices that you own or control, subject to the App Store Terms of Service. You may not reverse-engineer, decompile, rent, sell, or sublicense the app.</span></p>
+      <h2><span lang="zh">二、Pro 买断说明</span><span lang="en">2. About the Pro purchase</span></h2>
+      <ul>
+        <li><span lang="zh">轻轻 Pro 为<strong>一次性买断</strong>，<strong>不是订阅</strong>，不会自动续费，不会产生任何后续扣款。</span><span lang="en">Feather Pro is a <strong>one-time purchase</strong>, <strong>not a subscription</strong>. It does not auto-renew and produces no recurring charges.</span></li>
+        <li><span lang="zh">购买后即永久解锁：整理即归档、相似照片分组。</span><span lang="en">The purchase permanently unlocks filing-while-you-review and similar-photo grouping.</span></li>
+        <li><span lang="zh">同一 Apple ID 可在你的多台设备上使用「恢复购买」重新解锁，无需二次付费。</span><span lang="en">Use "Restore Purchases" to unlock it on your other devices with the same Apple ID, at no further cost.</span></li>
+        <li><span lang="zh">免费版的滑动整理不设使用次数限制，也没有广告（截屏、按月、按相簿等全部来源都包含在内）。</span><span lang="en">Swipe-based cleanup is unlimited and ad-free in the free version, across every source — screenshots, by month, by album, and the rest.</span></li>
+      </ul>
+      <h2><span lang="zh">三、退款</span><span lang="en">3. Refunds</span></h2>
+      <p><span lang="zh">所有购买均由 Apple 处理，退款请求同样需要向 Apple 提出：访问 <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> 并选择对应订单。我们无法直接为你退款，但如果你在退款过程中遇到困难，可以联系我们协助说明情况。</span><span lang="en">All purchases are processed by Apple, and refund requests must go to Apple as well: visit <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> and select the relevant order. We cannot issue refunds directly, but if you run into trouble with the process, contact us and we will help explain the situation.</span></p>
+      <h2><span lang="zh">四、关于删除照片的重要提示</span><span lang="en">4. Important notice about deleting photos</span></h2>
+      <div class="callout callout--warn">
+      <p><span lang="zh"><strong>轻轻不会永久删除你的照片。</strong></span><span lang="en"><strong>Feather never permanently deletes your photos.</strong></span></p>
+      <p><span lang="zh">App 中的所有删除都通过 iOS 系统接口把照片移入系统「照片 → 最近删除」相册，并会弹出由系统自身呈现的确认框。照片在「最近删除」中保留 <strong>30 天</strong>，期间你可以随时完整恢复。超过 30 天后由 iOS 系统自动清除，该行为由系统控制，不受本 App 影响。</span><span lang="en">Every deletion in the app goes through iOS system APIs that move photos into the system "Photos → Recently Deleted" album, and each one raises a confirmation dialog presented by iOS itself. Photos stay in Recently Deleted for <strong>30 days</strong> and can be fully restored at any point during that window. After 30 days iOS purges them automatically — that behaviour is controlled by the system and is outside this app’s influence.</span></p>
+      </div>
+      <p><span lang="zh">请注意：删除照片是你主动做出的决定。我们强烈建议你在大规模整理前确认已有备份（如 iCloud 照片或电脑备份）。对于你确认删除并在 30 天恢复期内未恢复而导致的照片丢失，我们不承担责任。</span><span lang="en">Please note that deleting a photo is a decision you make. We strongly recommend confirming that you have a backup — iCloud Photos or a computer backup — before a large cleanup session. We are not liable for photos lost because you confirmed their deletion and did not restore them within the 30-day window.</span></p>
+      <h2><span lang="zh">五、存储空间说明</span><span lang="en">5. About freed-space figures</span></h2>
+      <p><span lang="zh">App 中展示的「已释放 XX MB」是基于系统提供的资源信息做出的<strong>估算值</strong>，用于给你直观反馈。由于照片仍在「最近删除」中保留 30 天，设备的可用空间通常要等系统真正清除后才会完全体现。该数字不构成对实际可用空间变化的精确承诺。</span><span lang="en">The "XX MB freed" figure shown in the app is an <strong>estimate</strong> derived from resource information the system provides, offered as immediate feedback. Because deleted photos remain in Recently Deleted for 30 days, your device’s available storage usually will not reflect the full amount until the system actually purges them. The number is not a precise promise about available storage.</span></p>
+      <h2><span lang="zh">六、免责声明</span><span lang="en">6. Disclaimer</span></h2>
+      <p><span lang="zh">本 App 按「现状」提供。在适用法律允许的最大范围内，我们不对 App 的适销性、特定用途适用性或不间断无错误运行作出明示或默示的保证。相似照片的分组结果基于算法判断，可能存在误判或漏判，最终的保留 / 删除决定由你做出。</span><span lang="en">The app is provided "as is". To the maximum extent permitted by law, we make no express or implied warranty of merchantability, fitness for a particular purpose, or uninterrupted error-free operation. Similar-photo grouping is the result of algorithmic judgement and may produce both false positives and misses; the final keep-or-delete decision is always yours.</span></p>
+      <h2><span lang="zh">七、责任限制</span><span lang="en">7. Limitation of liability</span></h2>
+      <p><span lang="zh">在适用法律允许的最大范围内，我们对因使用或无法使用本 App 而产生的任何间接、附带、特殊或后果性损失不承担责任。在任何情况下，我们的累计责任不超过你为本 App 实际支付的金额。本条款不排除或限制依法不可排除或限制的责任。</span><span lang="en">To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, or consequential loss arising from your use of, or inability to use, the app. In no event will our aggregate liability exceed the amount you actually paid for it. Nothing here excludes or limits liability that cannot lawfully be excluded or limited.</span></p>
+      <h2><span lang="zh">八、条款变更</span><span lang="en">8. Changes to these terms</span></h2>
+      <p><span lang="zh">我们可能不时更新本条款，更新后会修改本页面的生效日期。重大变更会在 App 内提示。继续使用即表示你接受更新后的条款。</span><span lang="en">We may update these terms from time to time and will change the effective date on this page when we do. Material changes will be announced inside the app. Continuing to use the app means you accept the updated terms.</span></p>
+      <h2><span lang="zh">九、适用法律</span><span lang="en">9. Governing law</span></h2>
+      <p><span lang="zh">本条款适用中华人民共和国法律（不含港澳台地区法律）。因本条款产生的争议，双方应友好协商解决；协商不成的，任何一方可向开发者所在地有管辖权的人民法院提起诉讼。</span><span lang="en">These terms are governed by the laws of the People’s Republic of China (excluding Hong Kong, Macau, and Taiwan). Disputes arising from them should first be resolved through good-faith negotiation; failing that, either party may bring proceedings before a court of competent jurisdiction at the developer’s place of business.</span></p>
+      <p class="small muted"><span lang="zh">本条款以中文版本为准。英文版本仅为方便阅读而提供，如有歧义，以中文版本为准。</span><span lang="en">The Chinese version of these terms is authoritative. This English version is provided for convenience; in case of any discrepancy, the Chinese version prevails.</span></p>
+      <h2><span lang="zh">十、联系我们</span><span lang="en">10. Contact us</span></h2>
+      <p><span lang="zh"><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></span><span lang="en"><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></span></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="brandmark.png" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">轻轻</span><span lang="en">Feather</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

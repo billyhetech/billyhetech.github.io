@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="隐私政策 — 轻轻"
+      data-title-en="Privacy Policy — Feather"
+      data-desc-zh="轻轻隐私政策：不收集任何数据，所有照片分析在设备本地完成；仅在需要时从你自己的 iCloud 下载照片，绝不上传。"
+      data-desc-en="Feather privacy policy: no data is collected and all photo analysis runs on device. Photos are only ever downloaded from your own iCloud, never uploaded.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>隐私政策 — 轻轻</title>
+<meta name="description" content="轻轻隐私政策：不收集任何数据，所有照片分析在设备本地完成；仅在需要时从你自己的 iCloud 下载照片，绝不上传。">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0f16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="brandmark.png" type="image/png">
+<link rel="apple-touch-icon" href="brandmark.png">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'feather-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="brandmark.png" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">轻轻</span><span lang="en">Feather</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="privacy.html" aria-current="page"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms</span></a>
+      <a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container prose">
+
+    <div class="pagehead">
+      <a class="back" href="index.html">
+        <span aria-hidden="true">←</span>
+        <span lang="zh">返回首页</span><span lang="en">Back to home</span>
+      </a>
+      <h1><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></h1>
+      <p class="lede"><span lang="zh">不收集数据、没有服务器、没有账号体系。下面是逐条的完整说明。</span><span lang="en">No data collected, no server, no accounts. Here is the full account, clause by clause.</span></p>
+    </div>
+
+    <div class="doc">
+      <dl class="meta">
+        <div>
+          <dt><span lang="zh">适用产品</span><span lang="en">Product</span></dt>
+          <dd><span lang="zh">轻轻 iOS 应用</span><span lang="en">Feather for iOS</span></dd>
+        </div>
+        <div>
+          <dt><span lang="zh">生效日期</span><span lang="en">Effective</span></dt>
+          <dd>2026-08-16</dd>
+        </div>
+        <div>
+          <dt><span lang="zh">最近更新</span><span lang="en">Last updated</span></dt>
+          <dd>2026-08-26</dd>
+        </div>
+        <div>
+          <dt><span lang="zh">个人信息处理者</span><span lang="en">Data controller</span></dt>
+          <dd>
+            <span lang="zh">高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）</span>
+            <span lang="en">Gao Yuan, sole proprietor of Beijing Beibeizhixing Yunying Fuzhuang Zhuanyingdian (an individually-owned business registered in China)</span>
+          </dd>
+        </div>
+        <div>
+          <dt><span lang="zh">联系邮箱</span><span lang="en">Contact</span></dt>
+          <dd><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></dd>
+        </div>
+      </dl>
+      <div class="callout">
+      <p><span lang="zh"><strong>一句话结论：轻轻不收集你的任何数据。</strong>App 没有服务器、没有账号体系，所有照片分析都在你的 iPhone 本地完成。唯一会产生网络流量的情形，是把<strong>你自己存在 iCloud 里的照片下载回本机</strong>以便分析，这一步由 Apple 的系统框架完成，照片不会流向我们或任何第三方。</span><span lang="en"><strong>In one line: Feather collects nothing.</strong> The app has no server and no account system, and every kind of photo analysis runs locally on your iPhone. The only network activity it can cause is <strong>downloading your own photos from your own iCloud library</strong> so they can be analysed — a step performed by Apple’s frameworks. No photo reaches us or any third party.</span></p>
+      </div>
+      <h2><span lang="zh">一、我们收集哪些信息</span><span lang="en">1. What we collect</span></h2>
+      <p><span lang="zh"><strong>我们不收集任何个人信息，也不收集任何设备信息或使用数据。</strong>具体而言：</span><span lang="en"><strong>We collect no personal information, no device information, and no usage data.</strong> Specifically:</span></p>
+      <ul>
+        <li><span lang="zh">不收集、不上传、不存储你的照片、视频或其中的任何内容。</span><span lang="en">We do not collect, upload, or store your photos, videos, or anything derived from them.</span></li>
+        <li><span lang="zh">不收集姓名、邮箱、手机号、身份证件等身份信息（App 无需注册或登录）。</span><span lang="en">We do not collect your name, email address, phone number, or any identity document — the app requires no sign-up and no sign-in.</span></li>
+        <li><span lang="zh">不收集设备标识符（IDFA / IDFV）、位置、通讯录、日历等信息。</span><span lang="en">We do not collect device identifiers (IDFA / IDFV), location, contacts, or calendar data.</span></li>
+        <li><span lang="zh">不使用任何第三方分析、广告、崩溃上报或推送 SDK。</span><span lang="en">We use no third-party analytics, advertising, crash-reporting, or push-notification SDKs.</span></li>
+      </ul>
+      <h2><span lang="zh">二、照片是怎么被处理的</span><span lang="en">2. How your photos are handled</span></h2>
+      <p><span lang="zh">轻轻需要你授予相册访问权限，才能显示照片、执行删除与归档。这些操作全部通过 Apple 提供的系统框架在设备本地完成：</span><span lang="en">Feather needs photo library access in order to show your photos and to perform deletions and filing. Every one of those operations runs locally through Apple-provided frameworks:</span></p>
+      <div class="table-scroll" lang="zh">
+        <table>
+          <thead><tr><th>能力</th><th>使用的系统框架</th><th>数据去向</th></tr></thead>
+          <tbody>
+            <tr><td>读取与显示照片</td><td>PhotoKit</td><td>仅在设备内存中，不落盘、不外发</td></tr>
+            <tr><td>相似照片分析</td><td>Vision（图像特征向量）</td><td>特征在设备本地计算并在本次扫描结束后释放，不保存、不外发</td></tr>
+            <tr><td>删除照片</td><td>PhotoKit</td><td>移入系统「最近删除」，30 天内可由你恢复</td></tr>
+            <tr><td>归档到相册</td><td>PhotoKit</td><td>仅在你的设备相册内移动 / 添加</td></tr>
+            <tr><td>收藏 / 取消收藏</td><td>PhotoKit</td><td>只修改这张照片在你相册里的「个人收藏」标记，等同于你在系统「照片」App 里点心形</td></tr>
+            <tr><td>查看照片详情</td><td>PhotoKit</td><td>读取文件名、尺寸、拍摄时间、所属相簿与拍摄位置，仅在本机显示，不外发、不做地名查询</td></tr>
+            <tr><td>按类型 / 相簿挑照片</td><td>PhotoKit（系统智能相册）</td><td>读取系统已经维护好的「截屏」「自拍」等智能相册的成员关系，只用于在 App 内筛出这一批照片，不外发</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-scroll" lang="en">
+        <table>
+          <thead><tr><th>Capability</th><th>Apple framework</th><th>Where the data goes</th></tr></thead>
+          <tbody>
+            <tr><td>Reading and displaying photos</td><td>PhotoKit</td><td>Held in device memory only — never written to our storage, never transmitted</td></tr>
+            <tr><td>Similarity analysis</td><td>Vision (image feature prints)</td><td>Feature vectors are computed on device and released when the scan ends; never stored, never transmitted</td></tr>
+            <tr><td>Deleting photos</td><td>PhotoKit</td><td>Moved to the system "Recently Deleted" album; restorable by you for 30 days</td></tr>
+            <tr><td>Filing into an album</td><td>PhotoKit</td><td>Moved or added only inside your own photo library</td></tr>
+            <tr><td>Marking a Favorite</td><td>PhotoKit</td><td>Only flips the Favorite flag on that photo in your library — identical to tapping the heart in Apple's Photos app</td></tr>
+            <tr><td>Photo details</td><td>PhotoKit</td><td>File name, dimensions, capture date, containing albums, and capture coordinates are read and shown on your device only; no reverse geocoding is performed</td></tr>
+            <tr><td>Picking by media type or album</td><td>PhotoKit (system smart albums)</td><td>Reads the membership of system smart albums such as Screenshots and Selfies purely to filter that batch in the app</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3><span lang="zh">关于 iCloud 照片与流量</span><span lang="en">About iCloud photos and data usage</span></h3>
+      <p><span lang="zh">如果你开启了 iCloud「优化 iPhone 存储空间」，部分照片在本机只保留低清占位图。为了让这些照片也能参与相似度分析、能被正常预览，轻轻会通过 Apple 的 PhotoKit <strong>向 iCloud 请求下载展示所需的照片数据</strong>。关于这件事，有三点需要说清楚：</span><span lang="en">If you use iCloud "Optimize iPhone Storage", some photos exist on your device only as low-resolution placeholders. So that those photos can still be previewed and compared, Feather asks Apple’s PhotoKit to <strong>fetch the image data it needs from iCloud</strong>. Three things about that are worth stating plainly:</span></p>
+      <ul>
+        <li><span lang="zh"><strong>这是下载，不是上传。</strong>数据方向是「你的 iCloud → 你的 iPhone」，我们没有服务器，照片不会、也无法流向我们或任何第三方。</span><span lang="en"><strong>This is a download, not an upload.</strong> The direction is your iCloud → your iPhone. We have no server; your photos cannot reach us or any third party.</span></li>
+        <li><span lang="zh"><strong>扫描只取降采样缩略图</strong>（相似度分析用 256×256）。只有当你正在查看一张动图、并且它仅存于 iCloud 时，系统才会下载该动图的完整数据以便播放；不会批量下载。</span><span lang="en"><strong>Scanning fetches downsampled thumbnails only</strong> (256×256 for similarity analysis). Only when you are actively viewing an animated image that exists solely in iCloud does the system fetch that one image’s full data for playback. Nothing is bulk-downloaded.</span></li>
+        <li><span lang="zh"><strong>过程可见。</strong>扫描界面会实时显示「其中 N 张从 iCloud 下载 · 只下载，不上传」，单张照片加载时也会标明来源，你随时可以知道流量花在哪里。</span><span lang="en"><strong>The process is visible.</strong> The scan screen shows a live count of photos fetched from iCloud, labelled "download only, never upload", and individual photos are labelled while they load — you can always see where the traffic went.</span></li>
+      </ul>
+      <p><span lang="zh">这一行为使用的是系统相册与 iCloud 之间的既有通道，与你在系统「照片」App 里浏览一张 iCloud 照片时发生的事情完全相同。</span><span lang="en">This uses the existing channel between the system photo library and iCloud — exactly what happens when you scroll past an iCloud photo in Apple’s own Photos app.</span></p>
+      <h3><span lang="zh">关于照片详情里的拍摄位置</span><span lang="en">About capture location in photo details</span></h3>
+      <p><span lang="zh">「照片详情」会显示这张照片自带的拍摄坐标（如果有）。这个坐标<strong>只从你本机的照片读出来、只显示给你看</strong>，不会被上传，也<strong>不会被拿去查询地名</strong>——反向地理编码需要联网请求，我们刻意没有做，宁可只显示一行原始经纬度。</span><span lang="en">The photo details screen shows the capture coordinates embedded in a photo, when it has any. Those coordinates are <strong>read from the photo on your device and displayed only to you</strong>. They are never uploaded, and they are <strong>never turned into a place name</strong>: reverse geocoding would require a network request, so we deliberately do not do it and show the raw latitude and longitude instead.</span></p>
+      <h2><span lang="zh">三、本地存储了什么</span><span lang="en">3. What is stored on your device</span></h2>
+      <p><span lang="zh">轻轻只在你的设备本地保存以下与照片内容无关的记录，用于展示整理历史与统计：</span><span lang="en">Feather keeps only the following records — none of which contain image content — on your device, so it can show your cleanup history and statistics:</span></p>
+      <ul>
+        <li><span lang="zh">每次整理的时间、处理张数、删除张数、释放空间估算值、归档张数与目标相册名。</span><span lang="en">For each session: the time, how many photos were reviewed, how many were deleted, an estimate of the space freed, how many were filed, and the destination album names.</span></li>
+        <li><span lang="zh">被删除照片的系统标识符（<code>localIdentifier</code>，一串不含任何图像内容的字符串）。</span><span lang="en">The system identifier of each deleted photo (<code>localIdentifier</code> — a string that contains no image content).</span></li>
+        <li><span lang="zh">免费功能的使用计数（用于判断是否已用完免费额度）。</span><span lang="en">A usage counter for the free allowance, used to tell whether the daily quota is spent.</span></li>
+      </ul>
+      <p><span lang="zh">这些记录随 App 一同保存在设备上，卸载 App 即被系统删除，我们无法访问。</span><span lang="en">These records live on your device alongside the app. Uninstalling it removes them, and we have no way to access them at any point.</span></p>
+      <h2><span lang="zh">四、内购与支付</span><span lang="en">4. Purchases and payment</span></h2>
+      <p><span lang="zh">轻轻 Pro 是一次性买断（非订阅）。支付、退款与购买凭证校验全部由 Apple 的 App Store 完成，我们不接触也不存储你的支付信息。购买状态通过 Apple 提供的接口在设备本地校验。Apple 对交易信息的处理适用 <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple 隐私政策</a>。</span><span lang="en">Feather Pro is a one-time purchase, not a subscription. Payment, refunds, and receipt validation are handled entirely by Apple’s App Store; we never see or store your payment details. Purchase status is verified on your device through Apple-provided APIs. Apple’s handling of transaction data is governed by the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</span></p>
+      <h2><span lang="zh">五、第三方共享</span><span lang="en">5. Sharing with third parties</span></h2>
+      <p><span lang="zh">我们不向任何第三方提供、出售或共享你的信息——因为我们根本没有收集任何信息。App 内不含任何第三方 SDK。</span><span lang="en">We do not provide, sell, or share your information with anyone — because we never collect any of it. The app contains no third-party SDKs.</span></p>
+      <h2><span lang="zh">六、儿童隐私</span><span lang="en">6. Children’s privacy</span></h2>
+      <p><span lang="zh">轻轻不面向 14 周岁以下儿童设计，也不会有意收集任何年龄段用户的个人信息。由于 App 不收集任何数据，不存在针对儿童的额外风险。</span><span lang="en">Feather is not designed for children under 14, and we do not knowingly collect personal information from users of any age. Because the app collects no data at all, it presents no additional risk to children.</span></p>
+      <h2><span lang="zh">七、你的权利</span><span lang="en">7. Your rights</span></h2>
+      <p><span lang="zh">依据《中华人民共和国个人信息保护法》及其他适用法律，你享有查阅、复制、更正、删除个人信息等权利。由于本 App 不收集任何个人信息，这些权利在实践中体现为：</span><span lang="en">Under the Personal Information Protection Law of the People’s Republic of China — and under comparable laws such as the GDPR where they apply to you — you have rights to access, copy, correct, and delete your personal information. Because this app collects none, those rights take the following practical form:</span></p>
+      <ul>
+        <li><span lang="zh"><strong>撤回授权</strong>：随时在「设置 → 隐私与安全性 → 照片」中撤回或调整相册访问权限。</span><span lang="en"><strong>Withdraw access:</strong> revoke or narrow photo library access at any time in Settings → Privacy &amp; Security → Photos.</span></li>
+        <li><span lang="zh"><strong>删除本地记录</strong>：卸载 App 即可删除全部本地整理记录。</span><span lang="en"><strong>Delete local records:</strong> uninstalling the app removes every cleanup record it kept.</span></li>
+        <li><span lang="zh"><strong>恢复误删照片</strong>：在系统「照片 → 最近删除」中恢复，删除后 30 天内有效。</span><span lang="en"><strong>Recover deleted photos:</strong> restore them from Photos → Recently Deleted, for 30 days after deletion.</span></li>
+      </ul>
+      <h2><span lang="zh">八、政策变更</span><span lang="en">8. Changes to this policy</span></h2>
+      <p><span lang="zh">若本政策发生变更，我们会更新本页面顶部的「最近更新」日期；涉及重大变更时，会在 App 内显著提示。继续使用 App 即表示你接受更新后的政策。</span><span lang="en">If this policy changes we will update the "Last updated" date at the top of this page, and we will show a prominent notice inside the app for any material change. Continuing to use the app means you accept the updated policy.</span></p>
+      <h2><span lang="zh">九、联系我们</span><span lang="en">9. Contact us</span></h2>
+      <p><span lang="zh">对本政策有任何疑问，请发邮件至 <a href="mailto:graceglabs@163.com">graceglabs@163.com</a>，我们会在 5 个工作日内回复。</span><span lang="en">Questions about this policy? Email <a href="mailto:graceglabs@163.com">graceglabs@163.com</a> — we reply within five business days.</span></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="brandmark.png" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">轻轻</span><span lang="en">Feather</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
