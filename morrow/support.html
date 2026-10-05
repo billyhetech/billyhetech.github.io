@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="支持与常见问题 — 慢慢"
+      data-title-en="Support & FAQ — Morrow"
+      data-desc-zh="慢慢的常见问题与联系方式。"
+      data-desc-en="Morrow FAQ and how to reach us.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>支持与常见问题 — 慢慢</title>
+<meta name="description" content="慢慢的常见问题与联系方式。">
+<meta name="theme-color" content="#f7f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="mark.svg">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'morrow-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="mark.svg" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">慢慢</span><span lang="en">Morrow</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms</span></a>
+      <a href="support.html" aria-current="page"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container prose">
+
+    <div class="pagehead">
+      <a class="back" href="index.html">
+        <span aria-hidden="true">←</span>
+        <span lang="zh">返回首页</span><span lang="en">Back to home</span>
+      </a>
+      <h1><span lang="zh">支持与常见问题</span><span lang="en">Support &amp; FAQ</span></h1>
+      <p class="lede"><span lang="zh">常见问题与联系方式。</span><span lang="en">Common questions and how to reach us.</span></p>
+    </div>
+
+    <div class="doc">
+      <dl class="meta">
+        <div>
+          <dt><span lang="zh">适用产品</span><span lang="en">Product</span></dt>
+          <dd><span lang="zh">慢慢 iOS 应用</span><span lang="en">Morrow for iOS</span></dd>
+        </div>
+        <div>
+          <dt><span lang="zh">最近更新</span><span lang="en">Last updated</span></dt>
+          <dd>2026-10-05</dd>
+        </div>
+        <div>
+          <dt><span lang="zh">联系邮箱</span><span lang="en">Contact</span></dt>
+          <dd><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></dd>
+        </div>
+      </dl>
+      <div class="callout">
+      <p><span lang="zh"><strong>需要帮助？</strong>请发送邮件至 <a href="mailto:graceglabs@163.com">graceglabs@163.com</a>，我们将在 <strong>15 个工作日内</strong>回复。也可在 App 的「我的 → 帮助与反馈」中联系。</span><span lang="en"><strong>Need help?</strong> Email <a href="mailto:graceglabs@163.com">graceglabs@163.com</a> and we'll reply within <strong>15 business days</strong>. You can also contact us from Me → Help &amp; Feedback in the app.</span></p>
+      <p class="muted small"><span lang="zh">为便于排查，请附上 iPhone 型号、iOS 版本与 App 版本号（见「关于慢慢」）。请勿发送孩子的照片。</span><span lang="en">To help us troubleshoot, include your iPhone model, iOS version and app version (in About Morrow). Please don't send photos of your child.</span></p>
+      </div>
+      <section class="faq-group">
+      <h2><span lang="zh">常见问题</span><span lang="en">Frequently asked questions</span></h2>
+      <details open>
+        <summary><span lang="zh">我的照片会上传吗？</span><span lang="en">Are my photos uploaded?</span></summary>
+      <p><span lang="zh">不会。照片分析、语音转写和文字润色都在这台 iPhone 上完成。唯一会发出去的是为显示地名查询的一处大致坐标，可以在「隐私与安全」中关闭。</span><span lang="en">No. Photo analysis, transcription and polishing all happen on this iPhone. The only thing that leaves it is one approximate location used to look up a place name, which you can turn off in Privacy &amp; Security.</span></p>
+      </details>
+      <details open>
+        <summary><span lang="zh">为什么认不出我的孩子？</span><span lang="en">Why can't Morrow recognize my child?</span></summary>
+      <p><span lang="zh">慢慢通过孩子的头像照片认出孩子。请在孩子资料中换一张正脸清楚、只有孩子一个人的照片；完成的故事越多，认得越准。</span><span lang="en">Morrow recognizes your child from their profile photo. Choose a photo in their profile with a clear, front-facing view of just your child; the more stories you complete, the better it gets.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">为什么还没有发现故事？</span><span lang="en">Why hasn't Morrow found any stories yet?</span></summary>
+      <p><span lang="zh">成长的变化需要时间跨度：同一个地方隔几个月再拍、学走路前后的照片，才能比出变化。慢慢宁可少推荐，也不会编造故事。你也可以从首页「找照片」自己挑照片开始。</span><span lang="en">Growth takes time to show: photos at the same place months apart, or before and after learning to walk. Morrow would rather suggest less than make stories up. You can also start one yourself from Find Photos on Home.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">为什么时光里只有最近的日子？</span><span lang="en">Why does the Timeline only show recent days?</span></summary>
+      <p><span lang="zh">免费版第一次会往前整理最近 90 天，之后的新照片会一直整理进时光，整理过的不会再被收起。开启慢慢 Pro 后，会一直往回整理到孩子出生那天。</span><span lang="en">The first time, the free version organizes the last 90 days, and new photos keep flowing into the Timeline after that. Nothing that's been organized is ever taken away. With Morrow Pro, Morrow organizes all the way back to the day your child was born.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">免费版和慢慢 Pro 有什么区别？</span><span lang="en">What's the difference between free and Morrow Pro?</span></summary>
+      <p><span lang="zh">免费版可以扫描全部照片、发现全部故事、完成第 1 篇完整故事、整理每个孩子的第一份周岁回忆，并导出前 3 个回忆视频。之后的故事可以单篇购买（最多 3 篇），或开启慢慢 Pro：从出生到现在的完整时光、不限篇数的完整故事、不限次导出回忆视频。</span><span lang="en">The free version scans all your photos, finds every story, lets you complete your first full story, makes each child's First Birthday Recap, and exports your first 3 Memory Videos. After that, buy single stories (up to 3) or start Morrow Pro: a complete Timeline from birth to now, unlimited full stories, and unlimited Memory Video exports.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">怎么取消订阅？</span><span lang="en">How do I cancel my subscription?</span></summary>
+      <p><span lang="zh">打开 iPhone「设置 → Apple 账户 → 订阅」，选择慢慢 Pro 后取消；也可以在慢慢的「设置 → 慢慢 Pro → 管理订阅」中打开同一个页面。</span><span lang="en">Open iPhone Settings → Apple Account → Subscriptions, choose Morrow Pro and cancel. You can also open the same page from Morrow: Settings → Morrow Pro → Manage Subscription.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">订阅到期后，故事还在吗？</span><span lang="en">Will my stories stay if my subscription ends?</span></summary>
+      <p><span lang="zh">在。已经完成的故事、免费和单篇解锁的故事都永久保留，你写下的文字与录音也不会删除。只是还没完成的故事需要再次解锁才能生成初稿和完成。</span><span lang="en">Yes. Completed stories and stories unlocked for free or individually stay forever, and your words and recordings are never deleted. Unfinished stories just need to be unlocked again before drafting and completing.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">换手机或删除 App，数据会怎样？</span><span lang="en">What happens if I switch phones or delete the app?</span></summary>
+      <p><span lang="zh">慢慢没有账号和云同步，内容都在这台 iPhone 上。删除 App 会删除慢慢中的全部内容（相册里的照片不受影响）。换手机时，故事资料可以随 iPhone 备份迁移，但录音和照片分析数据不在备份中。重要的故事请导出 PDF 保存。</span><span lang="en">Morrow has no accounts or cloud sync; everything lives on this iPhone. Deleting the app deletes everything in Morrow (photos in your library aren't affected). When you switch phones, story data can move with your iPhone backup, but recordings and photo analysis data aren't backed up. Export important stories as PDFs.</span></p>
+      </details>
+      <details>
+        <summary><span lang="zh">地名是怎么来的？</span><span lang="en">Where do place names come from?</span></summary>
+      <p><span lang="zh">慢慢把一处地点的大致坐标发给 Apple 地图查询地名，只写具体的地方；查不到时标题不写地名。地名印到分享卡上之前，需要你确认。</span><span lang="en">Morrow sends one approximate location to Apple Maps to look up a place name, and only uses specific places; if nothing is found, titles leave the place out. You confirm a place name before it's printed on a share card.</span></p>
+      </details>
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="mark.svg" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">慢慢</span><span lang="en">Morrow</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    <template data-icp-insertion-point></template>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

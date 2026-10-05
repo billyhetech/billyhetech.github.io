@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="使用条款 — 慢慢"
+      data-title-en="Terms of Use — Morrow"
+      data-desc-zh="慢慢使用条款：慢慢 Pro 自动续期订阅、单篇故事与内容归属。"
+      data-desc-en="Morrow terms of use: Morrow Pro auto-renewing subscriptions, single stories and who owns your content.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>使用条款 — 慢慢</title>
+<meta name="description" content="慢慢使用条款：慢慢 Pro 自动续期订阅、单篇故事与内容归属。">
+<meta name="theme-color" content="#f7f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="mark.svg">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'morrow-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="mark.svg" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">慢慢</span><span lang="en">Morrow</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <a href="terms.html" aria-current="page"><span lang="zh">使用条款</span><span lang="en">Terms</span></a>
+      <a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container prose">
+
+    <div class="pagehead">
+      <a class="back" href="index.html">
+        <span aria-hidden="true">←</span>
+        <span lang="zh">返回首页</span><span lang="en">Back to home</span>
+      </a>
+      <h1><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></h1>
+      <p class="lede"><span lang="zh">与 App 内「设置 → 使用条款」一致，Apple 标准最终用户许可协议同时适用。</span><span lang="en">These terms match Settings → Terms of Use in the app. Apple's Standard End User License Agreement also applies.</span></p>
+    </div>
+
+    <div class="doc">
+      <dl class="meta">
+        <div>
+          <dt><span lang="zh">适用产品</span><span lang="en">Product</span></dt>
+          <dd><span lang="zh">慢慢 iOS 应用</span><span lang="en">Morrow for iOS</span></dd>
+        </div>
+        <div>
+          <dt><span lang="zh">最近更新</span><span lang="en">Last updated</span></dt>
+          <dd>2026-10-05</dd>
+        </div>
+        <div>
+          <dt><span lang="zh">联系邮箱</span><span lang="en">Contact</span></dt>
+          <dd><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></dd>
+        </div>
+      </dl>
+      <h2><span lang="zh">一、关于这些条款</span><span lang="en">1. About These Terms</span></h2>
+      <p><span lang="zh">使用慢慢即表示你同意这些条款。慢慢通过 App Store 提供，Apple 的标准最终用户许可协议同时适用。</span><span lang="en">By using Morrow you agree to these terms. Morrow is provided through the App Store, and Apple's Standard End User License Agreement also applies.</span></p>
+      <p><span lang="zh">慢慢由高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）提供。</span><span lang="en">Morrow is provided by Gao Yuan, sole proprietor of Beijing Beibeizhixing Yunying Fuzhuang Zhuanyingdian (an individually-owned business registered in China).</span></p>
+      <h2><span lang="zh">二、你的内容属于你</span><span lang="en">2. Your Content Is Yours</span></h2>
+      <p><span lang="zh">照片、录音、你写下的文字和完成的故事都属于你。分享或打印时，请确认你有权使用其中的照片与文字。</span><span lang="en">Your photos, recordings, words and completed stories belong to you. When sharing or printing, make sure you have the right to use the photos and words in them.</span></p>
+      <h2><span lang="zh">三、慢慢写的内容</span><span lang="en">3. What Morrow Writes</span></h2>
+      <p><span lang="zh">慢慢根据照片的日期、地点和画面整理故事候选、标题与初稿，可能不准确。完成故事前请核对，故事里只印你确认过的文字。</span><span lang="en">Morrow builds story suggestions, titles and drafts from your photos' dates, places and images, and they may not be accurate. Please check before completing a story; only words you've confirmed are printed.</span></p>
+      <h2><span lang="zh">四、慢慢 Pro</span><span lang="en">4. Morrow Pro</span></h2>
+      <p><span lang="zh">慢慢 Pro 是自动续期订阅，分为月付和年付，价格以 App Store 购买页显示为准。订阅会在每期结束前 24 小时内自动续费，除非你在此之前取消；可在 iPhone「设置 → Apple 账户 → 订阅」中管理或取消。</span><span lang="en">Morrow Pro is an auto-renewing subscription, billed monthly or yearly at the price shown on the App Store purchase sheet. It renews automatically within 24 hours before each period ends unless you cancel beforehand; manage or cancel it in iPhone Settings → Apple Account → Subscriptions.</span></p>
+      <p><span lang="zh">订阅到期后，已经完成的故事、你写下的文字与录音都会保留；从出生到现在的时光回溯、不限篇数的完整故事、回忆视频的不限次导出等持续服务会停止。</span><span lang="en">If your subscription ends, completed stories and your words and recordings stay; ongoing services such as organizing back to birth, unlimited full stories and unlimited Memory Video exports stop.</span></p>
+      <h2><span lang="zh">五、单篇故事</span><span lang="en">5. Single Stories</span></h2>
+      <p><span lang="zh">单篇故事是一次性购买，在这台 iPhone 上永久解锁一篇完整故事，每台设备最多 3 篇。退款由 Apple 按其政策处理。</span><span lang="en">A single story is a one-time purchase that permanently unlocks one full story on this iPhone, up to 3 per device. Refunds are handled by Apple under its policies.</span></p>
+      <h2><span lang="zh">六、数据只在本机</span><span lang="en">6. Data Stays on This Device</span></h2>
+      <p><span lang="zh">慢慢没有云同步。删除 App、丢失或更换 iPhone 都可能导致慢慢中的内容丢失。重要的故事请导出 PDF 或存到相册保存。</span><span lang="en">Morrow has no cloud sync. Deleting the app, or losing or replacing your iPhone, can lose what's in Morrow. Export important stories as PDFs or save them to Photos.</span></p>
+      <h2><span lang="zh">七、变更与联系</span><span lang="en">7. Changes &amp; Contact</span></h2>
+      <p><span lang="zh">条款变更时，会在 App 内更新并标明日期。如有疑问，请发送邮件至 graceglabs@163.com。</span><span lang="en">If these terms change, they will be updated and dated in the app. Questions? Email graceglabs@163.com.</span></p>
+      <p class="muted"><span lang="zh">Apple 标准最终用户许可协议：</span><span lang="en">Apple Standard EULA: </span><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="mark.svg" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">慢慢</span><span lang="en">Morrow</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    <template data-icp-insertion-point></template>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

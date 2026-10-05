@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-CN"
+      data-title-zh="慢慢 — 让时光慢下来"
+      data-title-en="Morrow — Small Moments, Bigger Tomorrow"
+      data-desc-zh="慢慢帮家长把多年散落的孩子照片，完成为一篇真实、连贯、可编辑、可导出 PDF 的成长故事。照片只在你的 iPhone 上。"
+      data-desc-en="Morrow turns years of your child's photos into a true, connected growth story you can edit and export as a PDF. Photos never leave your iPhone.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>慢慢 — 让时光慢下来</title>
+<meta name="description" content="慢慢帮家长把多年散落的孩子照片，完成为一篇真实、连贯、可编辑、可导出 PDF 的成长故事。照片只在你的 iPhone 上。">
+<meta name="theme-color" content="#f7f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="mark.svg">
+<link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var d = document.documentElement, K = 'morrow-site-lang', l = null, m;
+  try { m = location.search.match(/[?&]lang=(zh|en)/); if (m) { l = m[1]; } } catch (e) {}
+  if (!l && location.hash === '#en') { l = 'en'; }
+  if (!l && location.hash === '#zh') { l = 'zh'; }
+  if (l) { try { localStorage.setItem(K, l); } catch (e) {} }
+  if (!l) { try { var s = localStorage.getItem(K); if (s === 'zh' || s === 'en') { l = s; } } catch (e) {} }
+  if (!l) {
+    var n = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < n.length; i++) { if (/^zh(-|_|$)/i.test(n[i] || '')) { l = 'zh'; break; } }
+  }
+  if (!l) {
+    try {
+      var t = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (t === 'Asia/Shanghai' || t === 'Asia/Chongqing' || t === 'Asia/Harbin' || t === 'Asia/Urumqi' || t === 'PRC') { l = 'zh'; }
+    } catch (e) {}
+  }
+  d.setAttribute('data-lang', l || 'en');
+  d.lang = (l === 'zh') ? 'zh-CN' : 'en';
+  var T = d.getAttribute('data-title-' + (l || 'en'));
+  if (T) { document.title = T; }
+}());
+</script>
+<noscript><style>.langswitch { display: none; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#main"><span lang="zh">跳到主要内容</span><span lang="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img src="mark.svg" alt="" aria-hidden="true" width="28" height="28">
+      <span lang="zh">慢慢</span><span lang="en">Morrow</span>
+    </a>
+
+    <nav class="topnav" aria-label="Site">
+      <a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy</span></a>
+      <a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms</span></a>
+      <a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" aria-pressed="true" lang="zh-CN">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">
+          <span lang="zh">iOS 18 或更新版本 · iPhone</span><span lang="en">Requires iOS 18 or later · iPhone</span>
+        </p>
+
+        <h1>
+          <span lang="zh">照片帮你想起来，<br>你来告诉慢慢，<br>那一天为什么重要</span><span lang="en">Photos help you remember.<br>You tell Morrow<br>why that day mattered.</span>
+        </h1>
+
+        <p class="lede">
+          <span lang="zh">将多年散落的孩子照片与家庭记忆，整理为一篇真实、可编辑、可导出 PDF 的成长故事。全程在 iPhone 本机完成，<strong>照片不上传</strong>。</span><span lang="en">Turn years of your child's photos and family memories into a true growth story you can edit and export as a PDF. Everything happens on your iPhone, and <strong>photos never leave it</strong>.</span>
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn--primary" href="#privacy">
+            <span lang="zh">隐私承诺</span><span lang="en">Our privacy promise</span>
+          </a>
+          <a class="btn btn--ghost" href="support.html">
+            <span lang="zh">常见问题</span><span lang="en">FAQ &amp; support</span>
+          </a>
+        </div>
+
+        <ul class="trust">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.3 2.9 8.3 7 9.5 4.1-1.2 7-5.2 7-9.5V6l-7-3Z"/><path d="m9.2 12.2 2 2 3.6-4"/></svg>
+            <span lang="zh">照片仅在本机分析</span><span lang="en">Photos analyzed on device</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/><path d="m4 4 16 16"/></svg>
+            <span lang="zh">无账号、无服务器</span><span lang="en">No account, no server</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></svg>
+            <span lang="zh">不追踪、无广告</span><span lang="en">No tracking, no ads</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <div class="device" aria-hidden="true">
+          <div class="device__screen">
+            <img class="device__photo" src="hero.jpg" alt="" width="720" height="1520" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--tint" id="features">
+    <div class="container">
+      <span class="section-kicker" lang="zh">慢慢能做什么</span>
+      <span class="section-kicker" lang="en">What it does</span>
+
+      <h2>
+        <span lang="zh">机器发现变化，家长赋予意义，慢慢完成故事</span><span lang="en">Morrow finds the change. You give it meaning. Together, a story.</span>
+      </h2>
+
+      <p class="lede">
+        <span lang="zh">孩子的照片越拍越多，却很少再被翻看。慢慢从相册中找出值得留下的变化，再由你讲述照片背后的故事。</span><span lang="en">Photos of your child pile up and are rarely revisited. Morrow finds the changes worth keeping, and you tell the story behind them.</span>
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="8" height="12" rx="1.5"/><rect x="13" y="5" width="8" height="12" rx="1.5"/><path d="M7 20h10"/></svg>
+          </div>
+          <h3><span lang="zh">发现成长中的变化</span><span lang="en">Discover how they've grown</span></h3>
+          <p>
+            <span lang="zh">同一地点相隔数年的「那时 / 现在」，从扶着站到独立行走的成长路径，都能从照片中自动发现；只呈现照片能证明的事实。</span><span lang="en">Then-and-now pairs from the same place years apart, and the path from pulling up to stand to walking. Morrow finds them in your photos and shows only what the photos can prove.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21"/></svg>
+          </div>
+          <h3><span lang="zh">讲述与成稿</span><span lang="en">From your words to a draft</span></h3>
+          <p>
+            <span lang="zh">为每张照片说几句或写几句，语音在本机转为文字并整理为初稿；故事中只保留你确认过的内容。</span><span lang="en">Speak or type a few lines for each photo. Speech is transcribed on device and shaped into a draft, and only what you confirm is kept.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/></svg>
+          </div>
+          <h3><span lang="zh">时光与周岁回忆</span><span lang="en">Timeline and First Birthday Recap</span></h3>
+          <p>
+            <span lang="zh">每天的照片整理为时光中的成长瞬间；孩子满一岁时，从十二个月中各选一张，生成十二宫格与回忆视频。</span><span lang="en">Each day's photos become Daily Moments in your Timeline. At one year, one photo from each month becomes a 12-photo grid and a Memory Video.</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5C6.5 4.5 9.5 4.5 12 6c2.5-1.5 5.5-1.5 8-.5V19c-2.5-1-5.5-1-8 .5-2.5-1.5-5.5-1.5-8-.5Z"/><path d="M12 6v13.5"/></svg>
+          </div>
+          <h3><span lang="zh">分享卡、回忆视频与 PDF</span><span lang="en">Share cards, Memory Videos and PDFs</span></h3>
+          <p>
+            <span lang="zh">完成的故事可发给家人、存到相册，或导出排版好的 PDF 成长书。</span><span lang="en">Send a finished story to family, save it to Photos, or export a typeset PDF growth book.</span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="privacy">
+    <div class="container">
+      <div class="panel">
+        <div>
+          <span class="section-kicker" lang="zh">隐私承诺</span>
+          <span class="section-kicker" lang="en">Privacy</span>
+
+          <h2>
+            <span lang="zh">孩子的照片，只留在你的 iPhone 上</span><span lang="en">Your child's photos stay on your iPhone</span>
+          </h2>
+
+          <p class="muted">
+            <span lang="zh">慢慢没有服务器与账号体系，也不含任何统计或广告 SDK。识别孩子、挑选照片与语音转写均在本机完成。</span><span lang="en">Morrow has no server, no accounts, and no analytics or advertising SDKs. Recognizing your child, choosing photos and transcribing speech all happen on your iPhone.</span>
+          </p>
+
+          <p class="muted">
+            <span lang="zh">唯一对外发送的信息，是为显示地名提交给 Apple 地图的<strong>一处大致坐标</strong>，不含照片及其他信息，可随时在 App 中关闭。</span><span lang="en">The only information sent off your iPhone is <strong>one approximate location</strong>, sent to Apple Maps to show a place name. It includes no photos or other data, and you can turn it off anytime in the app.</span>
+          </p>
+
+          <p>
+            <span class="badge-label" lang="zh">App Store 隐私标签：不收集数据</span>
+            <span class="badge-label" lang="en">App Store privacy label: Data Not Collected</span>
+          </p>
+        </div>
+
+        <ul class="factlist">
+          <li>
+            <b><span lang="zh">账号</span><span lang="en">Accounts</span></b>
+            <span><span lang="zh">无需注册或登录</span><span lang="en">None. No sign-up or sign-in</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">服务器</span><span lang="en">Servers</span></b>
+            <span><span lang="zh">无。照片、录音与故事仅保存在本机</span><span lang="en">None. Photos, recordings and stories stay on your iPhone</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">认出孩子</span><span lang="en">Recognizing your child</span></b>
+            <span><span lang="zh">人脸特征仅在本机计算与保存，不上传、不共享</span><span lang="en">Face features are computed and stored on device, never uploaded or shared</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">第三方 SDK</span><span lang="en">Third-party SDKs</span></b>
+            <span><span lang="zh">无统计、广告与崩溃上报</span><span lang="en">No analytics, ads or crash reporting</span></span>
+          </li>
+          <li>
+            <b><span lang="zh">网络行为</span><span lang="en">Network</span></b>
+            <span><span lang="zh">仅查询地名时向 Apple 地图发送一处大致坐标，可关闭</span><span lang="en">Only one approximate location sent to Apple Maps for place names, which you can turn off</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--tight" id="docs">
+    <div class="container">
+      <h2>
+        <span lang="zh">条款与支持</span><span lang="en">Legal &amp; support</span>
+      </h2>
+
+      <ul class="doclinks">
+        <li>
+          <a href="privacy.html">
+            <strong><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></strong>
+            <span><span lang="zh">照片、人脸特征与录音的处理方式、对外发送的信息及你的权利。</span><span lang="en">How photos, face features and recordings are handled, what leaves your device, and your rights.</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="terms.html">
+            <strong><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></strong>
+            <span><span lang="zh">慢慢 Pro 自动续期订阅、单篇故事、内容归属与本机数据。</span><span lang="en">Morrow Pro subscriptions, single stories, content ownership and on-device data.</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="support.html">
+            <strong><span lang="zh">支持与常见问题</span><span lang="en">Support & FAQ</span></strong>
+            <span><span lang="zh">无法识别孩子、尚未发现故事、取消订阅与更换设备。</span><span lang="en">Recognizing your child, finding stories, cancelling a subscription and switching iPhones.</span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="mark.svg" alt="" aria-hidden="true" width="30" height="30">
+        <span lang="zh">慢慢</span><span lang="en">Morrow</span>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="index.html"><span lang="zh">首页</span><span lang="en">Home</span></a></li>
+        <li><a href="privacy.html"><span lang="zh">隐私政策</span><span lang="en">Privacy Policy</span></a></li>
+        <li><a href="terms.html"><span lang="zh">使用条款</span><span lang="en">Terms of Use</span></a></li>
+        <li><a href="support.html"><span lang="zh">支持</span><span lang="en">Support</span></a></li>
+        <li><a href="mailto:graceglabs@163.com">graceglabs@163.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <p class="muted" lang="zh">© <span class="js-year">2026</span> 高园（个体工商户「北京贝贝之星孕婴服装专营店」经营者）。保留所有权利。</p>
+      <p class="muted" lang="en">© <span class="js-year">2026</span> Gao Yuan (sole proprietor). All rights reserved.</p>
+    <template data-icp-insertion-point></template>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
